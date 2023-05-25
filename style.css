@@ -1,0 +1,147 @@
+.authForm {
+    width: 300px;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.authForm .from-block {
+    background-color: #08c;
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+    border-radius: 3px;
+}
+
+.top-bar {
+    background: #fff;
+    height: 80px;
+    width: 100%;
+}
+
+.cart, .likeList {
+    width: 250px;
+    height: 50px;
+    background-color: #9bda14;
+    border-radius: 20px;
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+}
+.likeList{
+    width: 100px;
+    padding: 5px 15px;
+    margin-right: 10px;
+    background-color: #d499e2;
+}
+.likeList img{
+    height: 40px;
+}
+
+.cart img {
+    max-width: 40px;
+}
+.nav{
+    position: fixed;
+    z-index: 10000;
+    width: 100%;
+}
+.mirageColor{
+    background: #2f394e;
+    height: 100%;
+}
+
+.container--goods{
+    padding: 100px 30px;
+}
+.goodsItem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffffff;
+    border-radius: 20px;
+    width: 280px;
+    height: 460px;
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+}
+.goodsItem a{
+    color: #334353;
+    text-decoration: none;
+}
+.order__itemCost{
+    color: #d499e2;
+    text-shadow: 1px 1px 1px #334353;
+}
+.btn{
+    width: 190px;
+    height: 50px;
+    font-size: 14px;
+    background: #9bda14;
+    border: none;
+    border-radius: 20px;
+    color: #2f394e;
+    font-weight: 600;
+}
+.btn:hover{
+    background-color: #d499e2;
+}
+
+.goods__btn{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+div[id^=like__btn], .filled {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #334353;
+    background-color: #ffffff;
+    position: relative;
+    z-index: 1000;
+    transform: rotate(315deg);
+}
+.filled,
+.filled:before,
+.filled:after{
+    background-color: #334353!important;
+}
+
+div[id^=like__btn]:before, .filled:before,
+div[id^=like__btn]:after, .filled:after {
+  content: '';
+  position: absolute;
+  z-index: -1000;
+  width: 17px;
+  height: 20px;
+  border: 1px solid #334353;
+  background-color: #ffffff;
+}
+
+div[id^=like__btn]:before,.filled:before {
+  border-radius: 20px 20px 0 0;
+  top: -10px;
+  left: -1px;
+  border-right: none;
+  border-bottom: none;
+}
+
+div[id^=like__btn]:after, .filled:after {
+  border-radius: 20px 30px 30px 0;
+  top: -1px;
+  left: 10px;
+  border-left: 0;
+}
+.bgPink{
+    background-color: #d499e2;
+}
+.bgGreen{
+    background: #9bda14;
+}
+

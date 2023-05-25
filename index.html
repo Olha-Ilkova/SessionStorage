@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css" integrity="sha512-Ez0cGzNzHR1tYAv56860NLspgUGuQw16GiOOp/I2LuTmpSK9xDXlgJz3XN4cnpXWDmkNBKXR/VDMTCnAaEooxA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="d-none nav">
+        <div class="container-fluid ">
+            <div class="row">
+                <div class="col-12 top-bar d-flex align-items-center justify-content-end pr-5 ">
+                    <div class="likeList">
+                        <img src="img/img_507884.png" alt="">
+                        <span id="productsLikeCount">0</span>
+                    </div>
+                    <div class="cart">
+                        <img src="https://www.freepnglogos.com/uploads/shopping-cart-png/shopping-cart-svg-png-icon-download-28.png" alt="">
+                        <span id="productsCount">0</span>
+                        <div class="orderBtn--cost">- на <span id="order__sum">0</span> грн</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-content d-none">
+        <div class="container-fluid mirageColor">
+            <div class="row container--goods justify-content-center">
+                <div class="col-lg-3 col-md-4 col-sm-6 goodsItem">
+                    <img src="img/chair.jpeg">
+                    <a href="#">Стілець садовий RAVNEBAKKE білий</a>
+                    <span class="order__itemCost">1500 грн</span>
+                    <div class="goods__btn">
+                        <button class="btn bgGreen" id="addNewProduct-1">Додати в корзину</button>
+                        <div id="like__btn-1"></div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 goodsItem">
+                    <img src="img/lantern.jpeg">
+                    <a href="#">Ліхтар BROMS 20/26x24/32см 2шт/упак.</a>
+                    <span class="order__itemCost">900 грн</span>
+                    <div class="goods__btn">
+                        <button class="btn" id="addNewProduct-2">Додати в корзину</button>
+
+                        <div id="like__btn-2"></div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 goodsItem">
+                    <img src="img/pillow.jpeg">
+                    <a href="#">Подушка LYTTESHOLM зелений</a>
+                    <span class="order__itemCost">500 грн</span>
+                    <div class="goods__btn">
+                        <button class="btn" id="addNewProduct-3">Додати в корзину</button>
+                        <div id="like__btn-3"></div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 goodsItem">
+                    <img src="img/robe.jpeg">
+                    <a href="#">Халат TIMMERDALA S/M т.сірий</a>
+                    <span class="order__itemCost">700 грн</span>
+                    <div class="goods__btn">
+                        <button class="btn" id="addNewProduct-4">Додати в корзину</button>
+                        <div id="like__btn-4"></div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </section>
+
+
+    <section class="authForm d-none">
+        <div class="container">
+            <form action="#" class="from-block">
+                <div>
+                    <label class="form-label">
+                        <span>Login</span>
+                        <input type="text" name="login" class="form-control">
+                    </label>
+                </div>
+                <div>
+                    <label class="form-label">
+                        <span>Password</span>
+                        <input type="password" name="password" class="form-control">
+                    </label>
+                </div>
+                <button type="button" id="authButton" class="btn btn-warning mt-3">Відправити форму</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
